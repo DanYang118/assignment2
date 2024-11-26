@@ -1,0 +1,69 @@
+
+body {
+	font-family: Arial, sans-serif;
+	padding: 0;
+	background-color: #e2cece;
+}
+header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	text-align: center;
+	margin-left: 10%;
+	margin-right: 10%;
+	color: rgb(67, 60, 60);
+	width: 80%;
+}
+header h1 {
+	font: size 36 px;
+	margin: 20px;
+}
+nav {
+	display: flex;
+	gap: 10px;
+}
+nav button {
+	padding: 10px 20px;
+	background-color: #444;
+	color: white;
+	border:#444;
+	cursor:pointer;
+	border-radius: 10px;
+}
+nav button:hover {
+	background-color: #666;
+}
+nav button.active {
+    background-color: orange;
+}
+.content {
+	display: flex;
+	border-radius: 10px;
+	border: 2px solid transparent; /* Default border */
+    background-color: transparent; /* Default background */
+	margin-left: 10%;
+	margin-right: 10%;
+	padding: 10px;
+}
+.content img {
+	max-width: 450px;
+	margin-right: 20px;
+}
+.content .text h2 {
+	font-size: 24px;
+	margin:0;
+}
+.content .text {
+	padding-left: 20px;
+	max-width: 55%;
+
+}
+
+.content.active {
+    border: 2px solid #9fb0e8; /* Active border color */
+    background-color: #9fb0e8; /* Active background color */
+}
+.content.active .text h2,
+.content.active .text p {
+    color: darkblue; /* Change text color to dark green */
+}
